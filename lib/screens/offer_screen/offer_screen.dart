@@ -10,6 +10,14 @@ class OfferScreen extends StatefulWidget {
 class _OfferScreenState extends State<OfferScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(title: const Text('Offers'), backgroundColor: Colors.brown),
+      body: Center(
+        child: Text(
+          'Menu Screen',
+          style: TextStyle(fontSize: 24, color: Colors.brown.shade700),
+        ),
+      ),
+    );
   }
 }
