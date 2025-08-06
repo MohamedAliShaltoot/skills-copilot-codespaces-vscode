@@ -9,15 +9,12 @@ void main() {
 class CoffeeApp extends StatelessWidget {
   const CoffeeApp({super.key});
 
-  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: AppConstants.appName,
-      theme: ThemeData(
-        
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
+      theme: ThemeData(primarySwatch: Colors.brown),
       home: const HomeScreen(),
     );
   }
